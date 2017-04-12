@@ -1,0 +1,3 @@
+#skip the next line if the user matches (i.e. does NOT belong to the otp group)
+auth [success=1 default=ignore] pam_access.so accessfile=/etc/security/oath.access
+auth required pam_oath.so usersfile=/etc/security/oath.users window=20
